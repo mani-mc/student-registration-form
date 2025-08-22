@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <!-- Tailwind CSS Link -->
+    <link href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <img src="col-de-la-madeleine-5400x3037-11343.jpg" class="absolute" alt="">
+        <!-- Student Form Input -->
+        <div class="relative">
+            <section id="form" class="flex flex-col justify-center items-center">
+                <div class="rounded-md shadow-xl mt-20 text-white" style="width:420px; height: 450px;">
+                    <form onsubmit="saveform(event)" class="rounded-md p-2 py-4 mt-8">
+                        <h1 class="text-2xl text-center font-semibold">STUDENT FORM</h1>
+
+                        <!-- Form Inputs -->
+                        <div class="grid grid-cols-3 items-center p-2">
+                            <label for="name" class="ml-4">Name</label>
+                            <input type="text" id="name" class=" col-span-2 border border-inline-block rounded-md p-2 text-black"
+                                placeholder="Enter your name" required="" fdprocessedid="xpd5w4">
+                        </div>
+
+                        <div class="grid grid-cols-3 items-center p-2">
+                            <label class="ml-4">Age</label>
+                            <input type="text" id="age" class="col-span-2 border border-inline-black rounded-md p-2  text-black"
+                                placeholder="Enter your age" required="" fdprocessedid="u8wky8">
+                        </div>
+
+                        <div id="gender">
+                            <label class="ml-6">Gender</label>
+                            <input class="ml-16 cursor-pointer" type="radio" id="male" name="gender" value="Male"
+                                required="">
+                            <label for="Male">Male</label>
+
+                            <input class="cursor-pointer" type="radio" id="female" name="gender" value="Female"
+                                required="">
+                            <label for="Female">Female</label>
+                        </div>
+
+                        <div class=" grid grid-cols-3 items-center p-2">
+                            <label class="ml-4">Course</label>
+                            <select name="course" id="course"
+                                class="col-span-2 border border-inline-block rounded-md cursor-pointer p-2 text-black"
+                                required="" fdprocessedid="f8rg1l">
+                                <option value="Mern Stack">Mern Stack</option>
+                                <option value="Core Java">Core Java</option>
+                                <option value="Python">Python</option>
+                                <option value="Machine Learning">Machine Learning</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-3 items-center p-2">
+                            <label class="ml-4">Email</label>
+                            <input type="email" id="email"
+                                class="col-span-2 border border-inline-black rounded-md width p-2 text-black"
+                                placeholder="Enter your email" required="" fdprocessedid="uof2qk">
+                        </div>
+
+                        <button id="btn" class="p-2 border rounded-md text-white mt-8 "
+                            style="background-color: transparent;width: 392px; margin-left: 6px; " type="submit"
+                            fdprocessedid="4aeic">Submit</button>
+                    </form>
+                </div>
+
+                <!--Student Form Output  -->
+                <div class="mt-10">
+                    <section id="table">
+                        <table id="userTable">
+                            <thead>
+                                <tr class="text-white">
+                                    <th class="p-1">NAME</th>
+                                    <th class="p-1">AGE</th>
+                                    <th class="p-1">GENDER</th>
+                                    <th class="p-1">COURSE</th>
+                                    <th class="p-1">EMAIL</th>
+                                    <th class="p-1">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
