@@ -20,8 +20,4 @@ This project is a simple yet functional Student Form designed to collect, displa
     TailwindCSS – design
     JavaScript – logic & interactivity
 
-    🌐Live Here :
-
-    ❌ Not fully responsive (yet!) – upcoming update 🚀
-
-🔧 Planned improvements: mobile-friendly layout, better UI animations, and database integration
+    🌐Live Here :https://mani-mc.github.io/student-registration-form/
