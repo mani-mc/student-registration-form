@@ -19,5 +19,3 @@ This project is a simple yet functional Student Form designed to collect, displa
     HTML – structure
     TailwindCSS – design
     JavaScript – logic & interactivity
-
-    Live Here : https://mani-mc.github.io/student-registration-form/
